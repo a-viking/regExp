@@ -73,3 +73,20 @@
     box-shadow: 0 0 8px #999999;
     background-color: #fff;
 }
+
+#log {
+    background-color: #1e1e1e;
+    color: #fff;
+    min-width: 320px;
+    min-height: 400px;
+    width: 60%;
+    padding: 10px;
+}
+
+#log p {
+    margin: 0 0 2px;
+}
+
+#log p b {
+    color: #9C4520;
+}

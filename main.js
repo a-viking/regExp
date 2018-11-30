@@ -26,7 +26,7 @@ function handleRegExpInput(input, event) {
         resultHtml += textExample.substring(startIndex, tempObj.index);
         resultHtml += '<b>' + tempObj[0] + '</b>';
         startIndex = regExp.lastIndex;
-        var logMessage = 'Found \'' + tempObj[0] + '\' on position ' + tempObj.index;
+        var logMessage = 'Found <b>\'' + tempObj[0] + '\'</b> on position ' + tempObj.index;
         writeLog(logMessage);
         if (startIndex === textExample.length) {
             break;
