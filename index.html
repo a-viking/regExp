@@ -12,7 +12,7 @@
         <div class="head-section">
             <div class="regexp-section">
                 <span class="regexp-slash start">/</span>
-                <input type="text" onkeyup="handleRegExpInput(this)"/>
+                <input type="text" onkeyup="handleRegExpInput(this, event)"/>
                 <span class="regexp-slash end">/</span>
             </div>
         </div>
@@ -20,6 +20,9 @@
             <p>
                 Car is parking.
             </p>
+        </div>
+        <div id="log">
+            
         </div>
     </div>
     <div class="error-popup-modal">

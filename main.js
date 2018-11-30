@@ -1,4 +1,8 @@
-function handleRegExpInput(input) {
+function handleRegExpInput(input, event) {
+    if (event.keyCode !== 13) {
+        return;
+    }
+    clearLog();
     var textNode = document.getElementById('text-example');
     var textExample = textNode.innerText;
 
@@ -22,6 +26,8 @@ function handleRegExpInput(input) {
         resultHtml += textExample.substring(startIndex, tempObj.index);
         resultHtml += '<b>' + tempObj[0] + '</b>';
         startIndex = regExp.lastIndex;
+        var logMessage = 'Found \'' + tempObj[0] + '\' on position ' + tempObj.index;
+        writeLog(logMessage);
         if (startIndex === textExample.length) {
             break;
         }
@@ -42,4 +48,14 @@ function showErrorWindow(error) {
 function hideErrorWindow() {
     var popup = document.querySelector('.error-popup-modal');
     popup.classList.remove('show');
+}
+
+function writeLog(text) {
+    var logNode = document.getElementById('log');
+    logNode.innerHTML += '<p>' + text + '</p>';
+}
+
+function clearLog() {
+    var logNode = document.getElementById('log');
+    logNode.innerHTML = '';
 }
