@@ -13,8 +13,8 @@
 
 .regexp-section {
     position: relative;
-    min-width: 100px;
-    width: 80%;
+    min-width: 320px;
+    width: 30%;
 }
 
 .regexp-section input {
