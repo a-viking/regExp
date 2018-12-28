@@ -6,6 +6,12 @@
     background-color: #f3f3f3;
 }
 
+.hint {
+    color: #5b5b5b;
+    font-style: italic;
+    margin: 5px 0 0;
+}
+
 .head-section {
     padding: 10px;
     border-bottom: 1px solid #bebebe;
@@ -89,4 +95,8 @@
 
 #log p b {
     color: #9C4520;
+}
+
+#text-example {
+    font-size: 24px;
 }

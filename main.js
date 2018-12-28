@@ -1,4 +1,5 @@
 function handleRegExpInput(input, event) {
+    hideErrorWindow();
     if (event.keyCode !== 13) {
         return;
     }
@@ -7,7 +8,6 @@ function handleRegExpInput(input, event) {
     var textExample = textNode.innerText;
 
     if (input.value === '') {
-        hideErrorWindow();
         textNode.innerHTML = '<p>' + textExample + '</p>';
         return;
     }
